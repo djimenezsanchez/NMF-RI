@@ -4,7 +4,8 @@ This repository contains the official MATLAB implementation of:
 
 **NMF-RI: Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.**  
 Daniel Jiménez-Sánchez*, Mikel Ariz*, José Mário Morgado, Iván Cortés-Domínguez, Carlos Ortiz-de-Solórzano. https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz751/5583734  (*: equal contribution)
-contact: 
+
+contact: codesolorzano@unav.es
 
 ![NMF-RI](nmf-ri.png)
 
