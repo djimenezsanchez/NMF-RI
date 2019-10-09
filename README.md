@@ -17,54 +17,35 @@ Recent advances in multiplex immunostaining and multispectral cytometry have ope
 **Results**
 Our algorithm is exhaustively tested using synthetic data to study its robustness against different levels of colocalization, signal to noise ratio, spectral resolution, and the effect of errors in the initialization of the algorithm. Then we compare the performance of our method to that of traditional spectral unmixing algorithms using novel multispectral flow and image cytometry systems. In all cases, we show that our blind unmixing algorithm performs robust unmixing of highly spatially and spectrally mixed data with an unprecedently low computational cost. In summary, we present the first use of a blind unmixing method in multispectral flow and image cytometry, opening the door to the widespread use of our method to efficiently pre-process multiplex immunostaining samples without the need of experimental controls.
 
-### Requirements
-* Pytorch 0.2 (0.3 breaks simulation decoder)
-* Python 2.7 or 3.6
+### Data download
 
-### Data generation
+To replicate the paper's experiments on Tissue Cytometry data, first download the images following the link (hosted in google drive due to github space limitation):
 
-To replicate the experiments on simulated physical data, first generate training, validation and test data by running:
+https://drive.google.com/open?id=1JrtR0OwA9Af2Z0Zc5iUY2ImtZJuzpBlq
 
-```
-cd data
-python generate_dataset.py
-```
-This generates the springs dataset, use `--simulation charged` for charged particles.
-
-Note: Make sure to use the same preprocessing and evaluation scripts (check the loss function as well) as in our code release to get comparable results.
+We suggest to download the complete folder and maintain the original folder structure to prevent errors in the pipeline when loading images.
 
 ### Run experiments
 
-From the project's root folder, simply run
+From the project's root folder for each experiment, simply run
 ```
-python train.py
+main.m
 ```
-to train a Neural Relational Inference (NRI) model on the springs dataset. You can specify a different dataset by modifying the `suffix` argument: `--suffix charged5` will run the model on the charged particle simulation with 5 particles (if it has been generated).
 
-To train the encoder or decoder separately, run 
+### Use of NMF-RI on new data
 
-```
-python train_enc.py
-```
-or
 
-```
-python train_dec.py
-```
-respectively. We provide a number of training options which are documented in the respective training files.
 
-Additionally, we provide code for an LSTM baseline (denoted *LSTM (joint)* in the paper), which you can run as follows:
-```
-python lstm_baseline.py
-```
 
 ### Cite
 If you make use of this code in your own work, please cite our paper:
 ```
-@article{kipf2018neural,
-  title={Neural Relational Inference for Interacting Systems},
-  author={Kipf, Thomas and Fetaya, Ethan and Wang, Kuan-Chieh and Welling, Max and Zemel, Richard},
-  journal={arXiv preprint arXiv:1802.04687},
-  year={2018}
+@article{10.1093/bioinformatics/btz751,
+    author = {Jiménez-Sánchez, Daniel and Ariz, Mikel and Morgado, José Mário and Cortés-Domínguez, Iván and Ortiz-de-Solórzano, Carlos},
+    title = "{NMF-RI: Blind spectral unmixing of highly mixed multispectral flow and image cytometry data}",
+    journal = {Bioinformatics},
+    year = {2019},
+    month = {10},
+    doi = {10.1093/bioinformatics/btz751},
 }
 ```
