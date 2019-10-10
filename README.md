@@ -1,4 +1,4 @@
-# Blind_Unmixing_NMF_RI
+# NMF-RI: Blind spectral unmixing of highly mixed multispectral flow and image cytometry data.
 
 This repository contains the official MATLAB implementation of:
 
