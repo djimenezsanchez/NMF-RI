@@ -23,7 +23,7 @@ To replicate the paper's experiments on Tissue Cytometry data, first download th
 
 https://drive.google.com/open?id=1JrtR0OwA9Af2Z0Zc5iUY2ImtZJuzpBlq
 
-We suggest to download the complete folder and maintain the original folder structure to prevent errors in the pipeline when loading images.
+We suggest to download the complete folder and maintain the original folder structure to prevent loading errors when loading images.
 
 ### Run experiments
 
