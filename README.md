@@ -34,8 +34,7 @@ main.m
 
 ### Use of NMF-RI on new data
 
-
-
+To use NMF-RI on new data (tissue or flow cytometry) we recommend to use the ´main.m´ code distributed and load new cytometry data to the existing folder hierarchy.
 
 ### Cite
 If you make use of this code in your own work, please cite our paper:
