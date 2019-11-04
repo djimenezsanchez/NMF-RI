@@ -1,4 +1,4 @@
-Experiments and code described in: "NMF-RI: Blind spectral unmixing of highly mixed multispectral flow and image cytometry data"
+**Experiments and code described in: "NMF-RI: Blind spectral unmixing of highly mixed multispectral flow and image cytometry data"**
 Authors: Daniel Jimenez-Sanchez, Mikel Ariz, Jose Mario Morgado, Ivan Cortes-Dominguez, Carlos Ortiz-de-Solorzano.
 Contact: codesolorzano@unav.es
 
