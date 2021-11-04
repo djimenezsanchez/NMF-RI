@@ -30,7 +30,6 @@ alphaX = mean(Y(:))*0.001; % Sparseness for H
     
 layer=1;
 LayerN = 0;
-aVect(1) = 100;
 
 Astep=A0; % between steps
 Aprev=A0; % inside step
@@ -40,6 +39,9 @@ for n=1:max_it
     Anow = A; 
     
     aVect(n-LayerN) = sum(sum(abs(Aprev-Anow)));
+    if n==1
+        aVect(1)=100;
+    end
     daVect = diff(aVect);
 %     H(H<0.005) = 100*eps;
 %     H = H./mean(Y,1);
