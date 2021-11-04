@@ -30,6 +30,7 @@ alphaX = mean(Y(:))*0.001; % Sparseness for H
     
 layer=1;
 LayerN = 0;
+aVect(1) = 100;
 
 Astep=A0; % between steps
 Aprev=A0; % inside step
@@ -40,8 +41,7 @@ for n=1:max_it
     
     aVect(n-LayerN) = sum(sum(abs(Aprev-Anow)));
     daVect = diff(aVect);
-%     H(H<0.005) = 100*eps;
-%     H = H./mean(Y,1);
+     
     if n>1
     if any(abs(aVect)<theta1) | any(daVect>0) %Optimization triggering                     
         disp(['converge: ',num2str(sum(sum(abs(Astep-A)))),' N: ',num2str(n)]); 
