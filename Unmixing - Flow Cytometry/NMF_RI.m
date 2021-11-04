@@ -30,6 +30,7 @@ alphaX = mean(Y(:))*0.001; % Sparseness for H
     
 layer=1;
 LayerN = 0;
+aVect(1) = 100;
 
 Astep=A0; % between steps
 Aprev=A0; % inside step
