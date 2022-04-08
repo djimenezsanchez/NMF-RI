@@ -17,14 +17,6 @@ Recent advances in multiplex immunostaining and multispectral cytometry have ope
 **Results**
 Our algorithm is exhaustively tested using synthetic data to study its robustness against different levels of colocalization, signal to noise ratio, spectral resolution, and the effect of errors in the initialization of the algorithm. Then we compare the performance of our method to that of traditional spectral unmixing algorithms using novel multispectral flow and image cytometry systems. In all cases, we show that our blind unmixing algorithm performs robust unmixing of highly spatially and spectrally mixed data with an unprecedently low computational cost. In summary, we present the first use of a blind unmixing method in multispectral flow and image cytometry, opening the door to the widespread use of our method to efficiently pre-process multiplex immunostaining samples without the need of experimental controls.
 
-### Data download
-
-To replicate the paper's experiments on Tissue Cytometry data, first download the images following the link (hosted in google drive due to github space limitation):
-
-https://drive.google.com/open?id=1JrtR0OwA9Af2Z0Zc5iUY2ImtZJuzpBlq
-
-We suggest to download the complete folder and maintain the original folder structure to prevent loading errors when loading images.
-
 ### Run experiments
 
 From the project's root folder for each experiment, simply run
